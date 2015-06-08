@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="jquery-mobile/jquery.mobile.theme-1.0.min.css" rel="stylesheet" type="text/css"/>
+<link href="jquery-mobile/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="jquery-mobile/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="jquery-mobile/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+<script  src="jquery-mobile/acciones.js" type="text/javascript"></script>
+<script src="phonegap.js"></script>
+<style>
+		#principal{
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			background:#C60;
+		}
+		#pantalla{
+			float:left;
+			width:100%;
+			height:9%;
+			background:#0FF;
+			text-align:center;
+			font-size:2em;
+			font-weight:bold;
+			font-family: "Comic Sans MS", cursive;
+		}
+		#teclado{
+			float:left;
+			width:100%;
+		}
+		.nota{
+			position:relative;
+			float:left;
+			background-image:url(images/fondo13.jpg);
+			width: 50%;
+		}
+		.textonota{
+			position:relative;
+			top:80%;
+			text-align:center;
+			color:#C60;
+		}
+		.tocada{
+			color:#300;
+			background:#F00;
+			outline: solid 1px #FF0000;
+		}
+.text{
+	width:77%;
+	font-family:"Comic Sans MS", cursive;
+	color:#C00;
+	font-size:30px;
+	height:100%;
+	font-weight:bold;
+}
+	</style>
+		
+</head> 
+<body> 
+<div data-role="page" id="page" data-theme="b" div style="background-image:url(images/fondo12.jpg)">
+	<div data-role="header" data-add-back-btn="true" data-theme="d">
+		<h1><font color="#CC33FF" face="Trebuchet MS, Arial, Helvetica, sans-serif" size="+3">Tipos de Animales</font></h1>
+	</div>
+	<div data-role="content">	
+		<ul data-role="listview">
+            <div align="center" data-role="controlgroup" data-type="vertical">
+            <div class="text"> Mtro.David Nieto López</div>
+                        <div style="width:50%">
+            <a href="#page2" data-role="button" id="bot1">
+            Animales Domesticos
+            </a>
+            </div>
+            </div>
+              <div align="center" data-role="controlgroup" data-type="vertical">
+            <div style="width:65%">
+            <a href="#page3" data-role="button" id="bot2">
+            Animales Salvajes
+            </a>
+            </div>
+            </div>
+		</ul>		
+	</div>
+    </div>
+    </div>
+  <div data-role="page" id="page2" data-add-back-btn="true" data-back-btn-theme="d" data-back-btn-text="volver">
+	<div id="principal">
+    	<div data-role="header" id="pantalla">
+		<h1><font color="#FF00CC" face="Comic Sans MS, cursive" size="+3">Animales Domesticos</font></h1>		
+        </div>
+	<div id="teclado">	
+		<div id=domestico1 class="nota">
+        <div class="textonota">
+           <div align="center"> <img src="images/domestico1.jpg"style="height:300px; width:80%;"></div>
+            </div>
+        </div>
+        <div id="domestico2" class="nota">
+        	<div class="textonota">
+           <div align="center"> <img src="images/domestico2.jpg"style="height:300px; width:80%;"></div>
+            </div>
+        </div>
+        <div id="domestico5" class="nota">
+        	<div class="textonota">
+           <div align="center"> <img src="images/domestico5.jpg" style="height:300px; width:80%;"></div>
+   
+            </div>
+        </div>
+        <div id="domestico4" class="nota">
+        	<div class="textonota">
+          <div align="center"> <img  src="images/domestico4.jpg" style="height:300px; width:80%;"></div>
+            </div>
+        </div>
+        <div id="domestico3" class="nota">
+              <div class="textonota">
+            <div align="center"><img src="images/domestico3.jpg" style="height:300px; width:80%;"></div>
+            </div>
+        </div>
+         <div id="domestico6" class="nota">
+         <div class="textonota">
+            <div align="center"> <img src="images/domestico6.jpg"style="height:300px; width:80%;"></div>
+            </div>
+        </div>
+        <div data-role="footer">
+		<h4>Tipos de Animales</h4>
+	</div>
+	</div>
+</div>
+</div>
+     <div data-role="page" id="page3" data-add-back-btn="true" data-back-btn-theme="d" data-back-btn-text="volver">
+     <div id="principal">
+	<div data-role="header" id="pantalla">
+	     <h1><font color="#FF3300" face="Trebuchet MS, Arial, Helvetica, sans-serif" size="+2"> Animales Salvajes</font></h1>
+		</div>
+	<div id="teclado">	
+		<div id="salvaje1" class="nota">
+        <div class="textonota">
+            <img src="images/salvaje1.jpg"style="height:300px; width:80%;">
+            </div>
+        </div>
+        <div id="salvaje2" class="nota">
+        	<div class="textonota">
+            <img src="images/salvaje2.jpg"style="height:300px; width:80%;">
+            </div>
+        </div>
+        <div id="salvaje3" class="nota">
+        	<div class="textonota">
+            <img src="images/salvaje3.jpg" style="height:300px; width:80%;">
+   
+            </div>
+        </div>
+        <div id="salvaje4" class="nota">
+        	<div class="textonota">
+           <img src="images/salvaje4.jpg" style="height:300px; width:80%;">
+            </div>
+        </div>
+        <div id="salvaje5" class="nota">
+              <div class="textonota">
+            <img src="images/salvaje5.jpg" style="height:300px; width:80%;">
+            </div>
+        </div>
+         <div id="salvaje6" class="nota">
+         <div class="textonota">
+             <img src="images/salvaje6.jpg"style="height:300px; width:80%;">
+            </div>
+        </div>
+        <div data-role="footer">
+		<h4>Tipos de Animales</h4>
+	</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
